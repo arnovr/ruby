@@ -1,0 +1,14 @@
+language: ruby
+rvm:
+  - 2.3
+  - 2.4
+
+before_script:
+
+script:
+  - rake lint
+  - rake spec
+
+branches:
+  only:
+    - master

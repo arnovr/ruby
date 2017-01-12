@@ -1,0 +1,20 @@
+{
+  "name": "The way you make me feel",
+  "_links": {
+    "self": {
+      "href": "track/1"
+    },
+    "artists": [
+      {
+        "href": "artist/1",
+        "name": "Micheal Jackson"
+      }
+    ],
+    "albums": [
+      {
+        "href": "/album/1",
+        "title": "Bad"
+      },
+    ]
+  }
+}

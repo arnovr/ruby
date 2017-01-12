@@ -1,0 +1,20 @@
+{
+  "id": 1,
+  "album": "Hello",
+  "_links": {
+    "self": {
+      "href": "album/1"
+    },
+    "tracks": [{
+      "href": "track/1",
+      "track": "Hello"
+    }, {
+      "href": "track/2",
+      "track": "And bye"
+    }],
+    "artists": [{
+      "href": "artist/1",
+      "track": "Adele"
+    }]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "count": 1,
+  "total": 1000,
+  "_links": {
+    "self": {
+      "href": "albums/3"
+    },
+    "first": {
+      "href": "albums/1"
+    },
+    "prev": {
+      "href": "albums/2"
+    },
+    "next": {
+      "href": "albums/4"
+    },
+    "last": {
+      "href": "albums/40"
+    }
+  },
+  "_embedded": {
+    "albums": [{
+      "_links": {
+        "self": {
+          "href": "album/1"
+        }
+      },
+      "id": 1,
+      "album": "Hello"
+    }]
+  }
+}

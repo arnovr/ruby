@@ -1,0 +1,13 @@
+{
+  "id": 1,
+  "artist": "Adele",
+  "_links": {
+    "self": {
+      "href": "artist/1"
+    },
+    "albums": [{
+      "href": "album/1",
+      "album": "Hello"
+    }]
+  }
+}

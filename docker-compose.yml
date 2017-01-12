@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  ruby:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ruby/computeren
+    ports:
+      - 8080:8080
+    volumes:
+      - .:/usr/src/app
