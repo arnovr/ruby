@@ -1,6 +1,7 @@
-#trying out ruby
+[![Build Status](https://travis-ci.org/arnovr/ruby.svg?branch=master)](https://travis-ci.org/arnovr/ruby)
 
-This repo is created to test out ruby
+#Ruby
+This repo is created to play with ruby
 
 #start
 ````
