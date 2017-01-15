@@ -12,11 +12,16 @@
 AllCops:
   TargetRubyVersion: 2.3
   Exclude:
-    - 'bin/*'
+    - 'bin/rake'
+    - 'bin/rspec'
+    - 'bin/rubocop'
+    - 'bin/ruby-rewrite'
+    - 'bin/ruby-parse'
+    - 'bin/with-rspec'
+    - 'bin/build'
 
 Metrics/LineLength:
   Max: 140
-
 
 Documentation:
   Enabled: false
