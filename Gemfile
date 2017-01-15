@@ -8,10 +8,10 @@ group :development do
   gem 'rubocop'
 end
 group :test do
+  gem 'rspec'
   gem 'rspec-json_expectations'
   gem 'webmachine-test'
 end
 gem 'json'
-gem 'rspec'
 gem 'sqlite3'
 gem 'webmachine'

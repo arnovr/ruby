@@ -8,8 +8,8 @@ before_script:
   - bundle install
 
 script:
-  - rake lint
-  - rake spec
+  - bundle exec rake -t lint
+  - bundle exec rake -t spec
 
 branches:
   only:
