@@ -11,14 +11,6 @@
 # URISchemes: http, https
 AllCops:
   TargetRubyVersion: 2.3
-  Exclude:
-    - 'bin/rake'
-    - 'bin/rspec'
-    - 'bin/rubocop'
-    - 'bin/ruby-rewrite'
-    - 'bin/ruby-parse'
-    - 'bin/with-rspec'
-    - 'bin/build'
 
 Metrics/LineLength:
   Max: 140

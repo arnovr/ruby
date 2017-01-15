@@ -7,4 +7,5 @@ RSpec::Core::RakeTask.new(:spec) do |t|
 end
 
 RuboCop::RakeTask.new(:lint) do |t|
+  t.patterns = ['lib']
 end
