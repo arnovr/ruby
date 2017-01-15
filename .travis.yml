@@ -4,6 +4,8 @@ rvm:
   - 2.4.0
 
 before_script:
+  - gem install bundler
+  - bundle install
 
 script:
   - rake lint

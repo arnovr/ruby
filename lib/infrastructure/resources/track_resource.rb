@@ -46,13 +46,17 @@ module Infrastructure
         Infrastructure::Hypermedia::Relation.new(
           'artists',
           Infrastructure::Hypermedia::Mapper::ArtistMapper.new(
-            Infrastructure::Container.artist_repository.find_by_id(
-              Infrastructure::Container.album_repository.find_by_id(
-                track.album_id.to_s
-              ).first.artist_id.to_s
-            ),
+            artists,
             request.base_uri
           )
+        )
+      end
+
+      def artists
+        Infrastructure::Container.artist_repository.find_by_id(
+          Infrastructure::Container.album_repository.find_by_id(
+            track.album_id.to_s
+          ).first.artist_id.to_s
         )
       end
 
