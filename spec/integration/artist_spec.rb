@@ -45,24 +45,24 @@ describe 'WebApp' do
       )
     end
 
-    it 'create an artist' do
-      payload = '{
-          "artist": "Masters of the Universe"
-      }'
-      header('Content-Type', 'application/hal+json')
-      body(payload)
-
-      post '/artist'
-
-      expect(response.code).to equal(201)
-
-      get response.headers['Location']
-
-      expect(response.code).to equal(200)
-      expect(response.body).to include_json(
-        artist: 'Masters of the Universe'
-      )
-    end
+    # it 'create an artist' do
+    #   payload = '{
+    #       "artist": "Masters of the Universe"
+    #   }'
+    #   header('Content-Type', 'application/hal+json')
+    #   body(payload)
+    #
+    #   post '/artist'
+    #
+    #   expect(response.code).to equal(201)
+    #
+    #   get response.headers['Location']
+    #
+    #   expect(response.code).to equal(200)
+    #   expect(response.body).to include_json(
+    #     artist: 'Masters of the Universe'
+    #   )
+    # end
 
     it 'delete an artist' do
       header('Content-Type', 'application/hal+json')
