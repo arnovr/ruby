@@ -11,6 +11,9 @@
 # URISchemes: http, https
 AllCops:
   TargetRubyVersion: 2.3
+  Exclude:
+    - 'bin/*'
+
 Metrics/LineLength:
   Max: 140
 
